@@ -16,10 +16,7 @@ position是相对于元素的位置，并且必须是以下字符串之一：
 元素自身的后面。
 text是要被解析为HTML或XML,并插入到DOM树中的字符串。
 
-例子：
-// <div id="one">one</div> 
+例子：在div后面插入一个div
 var d1 = document.getElementById('one'); 
 d1.insertAdjacentHTML('afterend', '<div id="two">two</div>');
 
-// 此时，新结构变成：
-// <div id="one">one</div><div id="two">two</div>
